@@ -1,0 +1,8 @@
+{"_id":{"$oid":"5d1f30d550f217c719717e56"},"name":"pantalones","picture":"http://loopeando.com/prueba-vue/imgs/vaqueros.jpg","id":1.562311358862e+12,"__v":0}
+{"_id":{"$oid":"5d1f30ef50f217c719717e57"},"name":"zapatillas","picture":"http://www.loopeando.com/prueba-vue/imgs/zapatillas.jpg","id":1.562090248315e+12,"__v":0}
+{"_id":{"$oid":"5d1f319450f217c719717e58"},"name":"Sudaderas","picture":"http://www.loopeando.com/prueba-vue/imgs/sudaderas.jpg","id":1.562090179677e+12,"__v":0}
+{"_id":{"$oid":"5d1f31a350f217c719717e59"},"name":"vestidos","picture":"http://loopeando.com/prueba-vue/imgs/vestidos.jpg","id":6,"__v":0}
+{"_id":{"$oid":"5d1f31aa50f217c719717e5a"},"name":"polos","picture":"http://www.loopeando.com/prueba-vue/imgs/polos.jpg","id":4,"__v":0}
+{"_id":{"$oid":"5d1f31af50f217c719717e5b"},"name":"polos","picture":"http://www.loopeando.com/prueba-vue/imgs/polos.jpg","id":3,"__v":0}
+{"_id":{"$oid":"5d1f31b550f217c719717e5c"},"name":"camisetas","picture":"http://www.loopeando.com/prueba-vue/imgs/camisetas.jpg","id":2,"__v":0}
+{"_id":{"$oid":"5d1f31bb50f217c719717e5d"},"name":"camisas","picture":"http://www.loopeando.com/prueba-vue/imgs/camisas.jpg","id":1,"__v":0}
