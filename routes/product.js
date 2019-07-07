@@ -2,10 +2,10 @@
 
 var express = require('express');
 var ProductController = require('../controllers/product');
+const auth = require('../middlewares/auth')
+//const userCtrl = require('../controllers/user')
 
 var api = express.Router();
-
-api.get('/pruebas', ProductController.pruebas);
 
 //Subimos productos
 api.post('/product', ProductController.saveProduct);
@@ -23,4 +23,10 @@ api.put('/product_update/:id', ProductController.updateProduct);
 api.delete('/product_delete/:id', ProductController.deleteProduct);
 
 
+//usuarios
+//api.post('/signup', userCtrl.signUp)
+//api.post('/signin', userCtrl.signIn)
+api.get('/private', auth, (req, res) => {
+  res.status(200).send({ message: 'Tienes acceso' })
+})
 module.exports = api;

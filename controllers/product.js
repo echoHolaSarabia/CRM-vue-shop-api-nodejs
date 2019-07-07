@@ -22,6 +22,9 @@ function saveProduct(req, res){
         product.color = params.color;
         product.actions = params.actions;
         product.id = params.id;
+        product.descrip_esp = params.descrip_esp;
+        product.descrip_eng = params.descrip_eng;
+        product.descrip_grm = params.descrip_grm;
 
         product.save((err, productStored) => {
             if (err){

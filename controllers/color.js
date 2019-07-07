@@ -45,7 +45,7 @@ function saveColor(req, res){
 //Devuelve Json son todos los datos
 //Ordena datos de último a primero: sort({'_id':-1})
 function getColors(req, res){
-    Colors.find({}).sort({'_id':-1}).exec((err, colors) => {
+    Color.find({}).sort({'_id':1}).exec((err, colors) => {
         if(err){
             res.status(500).send({
                 message: "Error listando Colors en el json"
@@ -69,7 +69,7 @@ function getColors(req, res){
 function getColor(req, res){
     var colorsId = req.params.id;
 
-    Colors.findById(colorsId).exec((err, colors) => { 
+    Color.findById(colorsId).exec((err, colors) => { 
         if(err){
             res.status(500).send({
                 message: "Error listando el colors en el json"
@@ -95,7 +95,7 @@ function updateColor(req, res){
     var update = req.body;
      
     //findByIdAndUpdate devuelve x defecto los datos a modificar. Si ponemos {new:true} nos trae los nuevos.
-    Colors.findByIdAndUpdate(prouductId, update, {new:true}, (err, colorUpdated) => {
+    Color.findByIdAndUpdate(prouductId, update, {new:true}, (err, colorUpdated) => {
         if(err){
             res.status(500).send({
                 message: "Error actualizando el colors"
@@ -129,7 +129,7 @@ function deleteColor(req, res){
         }else{
             if (colorRemoved){
                 res.status(200).send({
-                    color: coloremoved
+                    color: colorRemoved
                 })
             }else{
                 res.status(404).send({

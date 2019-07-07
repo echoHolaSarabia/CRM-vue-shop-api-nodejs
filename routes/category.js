@@ -5,9 +5,6 @@ var CategoryController = require('../controllers/category');
 
 var api = express.Router();
 
-api.get('/pruebas', CategoryController.pruebas);
-
-
 //Subimos 
 api.post('/category', CategoryController.saveCategory);
 

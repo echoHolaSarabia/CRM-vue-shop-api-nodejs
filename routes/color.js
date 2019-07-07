@@ -5,8 +5,6 @@ var ColorController = require('../controllers/color');
 
 var api = express.Router();
 
-api.get('/pruebas', ColorController.pruebas);
-
 //Subimos colores
 api.post('/color', ColorController.saveColor);
 

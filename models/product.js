@@ -12,7 +12,11 @@ var ProductSchema = Schema({
     category: Number,
     color: Array,
     actions: Number,
-    id: Number
+    id: Number,
+    descrip_esp: String,
+    descrip_eng: String,
+    descrip_grm: String
+
 });
 
 module.exports = mongoose.model('Product', ProductSchema)
